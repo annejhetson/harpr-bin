@@ -58,6 +58,4 @@ group :test do
 
   # https://github.com/thoughtbot/factory_girl_rails, MIT
   gem 'factory_girl_rails'
-
-  gem 'rspec_jsonapi', path: 'components/rspec_jsonapi', require: false
 end
