@@ -13,13 +13,16 @@
 
 ActiveRecord::Schema.define(version: 20170815052530) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "users", force: :cascade do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "email"
-    t.string   "#<ActiveRecord::ConnectionAdapters::TableDefinition:0x007fc17dbdac18>"
+    t.string   "#<ActiveRecord::ConnectionAdapters::PostgreSQL::TableDefinition"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
 end

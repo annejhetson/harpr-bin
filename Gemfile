@@ -6,7 +6,8 @@ gem 'rails', '4.2.7.1'
 # https://github.com/rails-api/rails-api, MIT
 gem 'rails-api'
 
-gem 'sqlite3'
+
+gem 'pg'
 
 # https://github.com/cerebris/jsonapi-resources, MIT
 # Purpose JSON API
